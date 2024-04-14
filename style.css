@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --color-primary: hsl(25, 97%, 53%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-LightGrey: hsl(217, 12%, 63%);
+  --color-MediumGrey: hsl(216, 12%, 54%);
+  --color-DarkBlue: hsl(213, 19%, 18%);
+  --color-VeryDarkBlue: hsl(216, 12%, 8%);
+}
+* {
+  /* border: 1px solid grey; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  color: var(--color-white);
+}
+body {
+  display: grid;
+  place-items: center;
+  background-color: var(--color-VeryDarkBlue);
+}
+p {
+  font-size: 15px;
+  color: var(--color-LightGrey);
+}
+main {
+  background-color: var(--color-DarkBlue);
+  margin-top: 150px;
+  display: grid;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  width: 350px;
+  height: 350px;
+}
+
+div.gambar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background-color: var(--color-VeryDarkBlue);
+}
+
+div.gambar img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rating-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+span.rating {
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 45px;
+  height: 45px;
+  width: 45px;
+  background-color: var(--color-VeryDarkBlue);
+  box-shadow: 4px 4px 6px 8px rgba(0, 0, 0, 0.1);
+  transition: all 300ms;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+span.rating:hover {
+  background-color: var(--color-primary);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 25px;
+  height: 40px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+.result {
+  display: none;
+}
+div.thankyou {
+  background-color: var(--color-DarkBlue);
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  width: 350px;
+  height: 350px;
+  text-align: center;
+}
+
+#selected-rating {
+  background-color: var(--color-VeryDarkBlue);
+  border-radius: 20px;
+  padding: 12px;
+  color: var(--color-primary);
+}
+
+#selected-rating span {
+  color: var(--color-primary);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
